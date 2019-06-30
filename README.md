@@ -1,28 +1,12 @@
 # tell don't ask kata
-A legacy refactor kata, focused on the violation of the [tell don't ask](https://pragprog.com/articles/tell-dont-ask) principle and the [anemic domain model](https://martinfowler.com/bliki/AnemicDomainModel.html).
+一个遗留代码重构练习，关注于消除违反[tell don't ask](https://pragprog.com/articles/tell-dont-ask)原则的[贫血领域模型](https://martinfowler.com/bliki/AnemicDomainModel.html)
+## 练习说明
+这是一个简单的订单流应用，可以创建订单，做一些计算（总价、税费等），并且管理它们（批准，否决和发货）
 
-## Instructions
-Here you find a simple order flow application. It's able to create orders, do some calculation (totals and taxes), and manage them (approval/reject and shipment).
+老的开发团队没有时间设计一个合理的领域模型，于是采用了过程式的思维来构造贫血领域模型，行云的是，他们花最少花时间编写了单元测试。
 
-The old development team did not find the time to build a proper domain model but instead preferred to use a procedural style, building this anemic domain model.
-Fortunately, they did at least take the time to write unit tests for the code.
+您是新任 CTO，在这个应用产生了很多 bug 之后，您被要求重构这个应用的代码，使它能更容易管理和更可靠。
 
-Your new CTO, after many bugs caused by this application, asked you to refactor this code to make it more maintainable and reliable.
-
-## What to focus on
-As the title of the kata says, of course, the tell don't ask principle.
-You should be able to remove all the setters moving the behavior into the domain objects.
-
-But don't stop there.
-
-If you can remove some test cases because they don't make sense anymore (eg: you cannot compile the code to do the wrong thing) feel free to do it!
-
-## Contribute
-If you would like to contribute to this kata adding new cases or smells: please open a pull request!
-
-## Feedback
-Feedback is welcome!
-
-How did you find the kata? Did you learn anything from it?
-
-Please contact me on twitter [@racingDeveloper](https://twitter.com/racingDeveloper) or use the GitHub repo wiki!
+## 练习要点
+正如题目所述，应该关注tell don't ask原则，你应该删除所有 setter 方法，并把行为移动到领域对象。
+但不要仅仅停留在这里，如果你能删除一些测试，那么尽管去做，因为有些测试已经不再有存在的理由了。
