@@ -1,9 +1,9 @@
 # tell don't ask kata
-一个遗留代码重构练习，关注于消除违反[tell don't ask](https://pragprog.com/articles/tell-dont-ask)原则的[贫血领域模型](https://martinfowler.com/bliki/AnemicDomainModel.html)
+一个遗留代码重构练习，关注于消除违反[tell don't ask](https://pragprog.com/articles/tell-dont-ask)原则的[贫血领域模型](https://martinfowler.com/bliki/AnemicDomainModel.html)。
 ## 练习说明
 这是一个简单的订单流应用，可以创建订单，做一些计算（总价、税费等），并且管理它们（批准，否决和发货）
 
-老的开发团队没有时间设计一个合理的领域模型，于是采用了过程式的思维来构造贫血领域模型，行云的是，他们花最少花时间编写了单元测试。
+老的开发团队没有时间设计一个合理的领域模型，于是采用了过程式的思维来构造贫血领域模型，幸运的是，他们花最少花时间编写了单元测试。
 
 您是新任 CTO，在这个应用产生了很多 bug 之后，您被要求重构这个应用的代码，使它能更容易管理和更可靠。
 
